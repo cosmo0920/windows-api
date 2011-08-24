@@ -73,6 +73,9 @@
    See the RDoc documentation, which should have been automatically generated
    if you installed this as a gem.
 
+== Future Plans
+   Add an auto_private method that is true by default.
+
 == Bugs
    None that I'm aware of. Please submit any bugs to the project page at
    http://www.rubyforge.org/projects/win32utils.
