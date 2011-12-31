@@ -1,7 +1,7 @@
 require 'win32/api'
 require 'rbconfig'
 require 'forwardable'
-include Config
+include RbConfig
 
 # The Windows module serves as a namespace only
 module Windows
