@@ -75,13 +75,14 @@
 
 == Future Plans
    Add an auto_private method that is true by default.
+   Replace or drop this library in favor of FFI.
 
 == Bugs
    None that I'm aware of. Please submit any bugs to the project page at
    http://www.rubyforge.org/projects/win32utils.
 
 == Copyright
-   (C) 2007-2009, Daniel J. Berger
+   (C) 2007-2012, Daniel J. Berger
 
 == License
    Artistic 2.0
