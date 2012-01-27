@@ -1,6 +1,6 @@
 ############################################################################
 # test_windows_api.rb
-# 
+#
 # Test case for the Windows::API class. You should run this as Rake task,
 # i.e. 'rake test', instead of running it directly.
 ############################################################################
@@ -56,15 +56,15 @@ class TC_Windows_API < Test::Unit::TestCase
    end
 
    def test_version
-      assert_equal('0.4.0', API::VERSION)
+      assert_equal('0.4.1', API::VERSION)
    end
-   
+
    def test_full_data_types
       assert_nothing_raised{
          API.new('GetWindowsDirectory', ['LPTSTR', 'UINT'], 'BOOL')
       }
    end
-   
+
    def test_msvcrt_constant
       assert_equal(true, @runtimes.include?(Windows::MSVCRT_DLL))
    end
@@ -121,22 +121,22 @@ class TC_Windows_API < Test::Unit::TestCase
       assert_nothing_raised{ $test_method.call(@buf.length, @buf) }
       assert_nothing_raised{ $foo_method.call(@buf, @buf.length) }
    end
-   
+
    def test_dll_name
       assert_respond_to($test_method, :dll_name)
       assert_equal('kernel32', $test_method.dll_name)
    end
-   
+
    def test_function_name
       assert_respond_to($test_method, :function_name)
       assert_equal('GetCurrentDirectory', $test_method.function_name)
    end
-   
+
    def test_prototype
       assert_respond_to($test_method, :prototype)
       assert_equal(['P', 'P'], $test_method.prototype)
    end
-   
+
    def test_return_type
       assert_respond_to($test_method, :return_type)
       assert_equal('L', $test_method.return_type)
@@ -149,7 +149,7 @@ class TC_Windows_API < Test::Unit::TestCase
       assert_equal('waveOutGetNumDevs', $wave.effective_function_name)
       assert_equal('ReadDirectoryChangesW', $read.effective_function_name)
    end
-   
+
    def test_bad_prototype_raises_error
       assert_raise(Win32::API::PrototypeError){ Windows::API.new('GetCurrentDirectory', 'XL', 'L') }
       assert_raise(Win32::API::PrototypeError){ Windows::API.new('GetCurrentDirectory', 'PL', 'X') }
@@ -158,7 +158,7 @@ class TC_Windows_API < Test::Unit::TestCase
    def test_bad_function_raises_error
       assert_raise(Win32::API::LoadLibraryError){ Windows::API.new('GetCurrentFooBar', 'LL', 'L') }
    end
-   
+
    def teardown
       @buf = nil
       @runtimes = nil
