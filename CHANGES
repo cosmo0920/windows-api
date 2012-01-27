@@ -1,7 +1,7 @@
 == 0.4.1 - 27-Jan-2012
 * Switched Config to RbConfig to silence 1.9 warnings. Thanks go to
   Cameron Cox for the patch.
-* Some updates to the README and Rakefile.
+* Some updates to the README, Rakefile, gemspec and test files.
 
 == 0.4.0 - 18-Oct-2009
 * Methods that begin with an underscore, such as _umask(), are now preserved.
