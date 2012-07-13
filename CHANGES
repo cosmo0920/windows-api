@@ -1,3 +1,8 @@
+== 0.4.2 - 13-Jul-2012
+* Fixed a bug in the way MSVCRT_DLL is set. Thanks go to Park Heesob for
+  the spot and patch.
+* Some minor test refactoring and cosmetic udpates.
+
 == 0.4.1 - 27-Jan-2012
 * Switched Config to RbConfig to silence 1.9 warnings. Thanks go to
   Cameron Cox for the patch.

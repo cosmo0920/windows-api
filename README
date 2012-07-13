@@ -31,35 +31,35 @@
 
    # This code....
    module Windows
-      module Foo
-         API.auto_namespace = 'Windows::Foo'
-         API.auto_constant  = true
-         API.auto_method    = true
-         API.auto_unicode   = true
+     module Foo
+       API.auto_namespace = 'Windows::Foo'
+       API.auto_constant  = true
+       API.auto_method    = true
+       API.auto_unicode   = true
          
-         API.new('GetComputerName', 'PP', 'B')
-      end
+       API.new('GetComputerName', 'PP', 'B')
+     end
    end
 
    # Is the same as this code...
    module Windows
-      module Foo
-         GetComputerName  = Win32API.new('kernel32', 'GetComputerName', 'PP', 'I')
-         GetComputerNameA = Win32API.new('kernel32', 'GetComputerNameA', 'PP', 'I')
-         GetComputerNameW = Win32API.new('kernel32', 'GetComputerNameW', 'PP', 'I')
+     module Foo
+       GetComputerName  = Win32API.new('kernel32', 'GetComputerName', 'PP', 'I')
+       GetComputerNameA = Win32API.new('kernel32', 'GetComputerNameA', 'PP', 'I')
+       GetComputerNameW = Win32API.new('kernel32', 'GetComputerNameW', 'PP', 'I')
 
-         def GetComputerName(p1, p2)
-            GetComputerName.call(p1, p2) != 0
-         end
+       def GetComputerName(p1, p2)
+         GetComputerName.call(p1, p2) != 0
+       end
 
-         def GetComputerNameA(p1, p2)
-            GetComputerName.call(p1, p2) != 0
-         end
+       def GetComputerNameA(p1, p2)
+         GetComputerName.call(p1, p2) != 0
+       end
 
-         def GetComputerNameW(p1, p2)
-            GetComputerName.call(p1, p2) != 0
-         end
-      end
+       def GetComputerNameW(p1, p2)
+         GetComputerName.call(p1, p2) != 0
+       end
+     end
    end
 
 == Advantages over plain Win32::API
@@ -74,12 +74,12 @@
    if you installed this as a gem.
 
 == Future Plans
-   Add an auto_private method that is true by default.
-   Replace or drop this library in favor of FFI.
+   This library will eventually be dropped in favor of FFI once I'm convinced
+   that FFI is stable for both mingw and mswin.
 
 == Bugs
    None that I'm aware of. Please submit any bugs to the project page at
-   http://www.rubyforge.org/projects/win32utils.
+   https://github.com/djberg96/windows-api.
 
 == Copyright
    (C) 2007-2012, Daniel J. Berger
