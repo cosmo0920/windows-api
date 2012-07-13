@@ -69,6 +69,11 @@
    * Ability to use more familiar Windows data types, e.g. DWORD.
    * Automatic handling of msvcrt vs msvcrXX via MSVCRT_DLL constant.
 
+== Other Stuff
+   There's also a WideString class for easily creating wide strings for
+   Ruby 1.8.x. Ruby 1.9.x can use Ruby's encoding methods to accomplish
+   the same effect, however.
+
 == More documentation
    See the RDoc documentation, which should have been automatically generated
    if you installed this as a gem.

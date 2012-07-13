@@ -1,22 +1,23 @@
 require 'rubygems'
 
-Gem::Specification.new do |gem|
-  gem.name       = 'windows-api'
-  gem.version    = '0.4.1'
-  gem.author     = 'Daniel J. Berger'
-  gem.license    = 'Artistic 2.0'
-  gem.email      = 'djberg96@gmail.com'
-  gem.homepage   = 'http://www.rubyforge.org/projects/win32utils'
-  gem.summary    = 'An easier way to create methods using Win32::API'
-  gem.test_files = Dir['test/test*.rb']
-  gem.files      = Dir['**/*'].reject{ |f| f.include?('git') }
+Gem::Specification.new do |spec|
+  spec.name       = 'windows-api'
+  spec.version    = '0.4.2'
+  spec.author     = 'Daniel J. Berger'
+  spec.license    = 'Artistic 2.0'
+  spec.email      = 'djberg96@gmail.com'
+  spec.homepage   = 'http://www.rubyforge.org/projects/win32utils'
+  spec.summary    = 'An easier way to create methods using Win32::API'
+  spec.test_files = Dir['test/test*.rb']
+  spec.files      = Dir['**/*'].reject{ |f| f.include?('git') }
 
-  gem.rubyforge_project = 'win32utils'
-  gem.extra_rdoc_files  = ['README', 'CHANGES', 'MANIFEST']
+  spec.rubyforge_project = 'win32utils'
+  spec.extra_rdoc_files  = ['README', 'CHANGES', 'MANIFEST']
 
-  gem.add_dependency('win32-api', '>= 1.4.5')
+  spec.add_dependency('win32-api', '>= 1.4.5')
+  spec.add_development_dependency('test-unit')
 
-  gem.description = <<-EOF
+  spec.description = <<-EOF
     The windows-api library provides features over and above the basic
     interface provided by the win32-api library. Features included automatic
     constant generation, automatic defintion of ANSI and Unicode methods,
