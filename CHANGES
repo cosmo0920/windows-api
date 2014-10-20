@@ -1,3 +1,6 @@
+== 0.4.3 - 20-Oct-2014
+* Updates to the gemspec and Rakefile.
+
 == 0.4.2 - 13-Jul-2012
 * Fixed a bug in the way MSVCRT_DLL is set. Thanks go to Park Heesob for
   the spot and patch.
