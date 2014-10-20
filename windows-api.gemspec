@@ -2,16 +2,15 @@ require 'rubygems'
 
 Gem::Specification.new do |spec|
   spec.name       = 'windows-api'
-  spec.version    = '0.4.2'
+  spec.version    = '0.4.3'
   spec.author     = 'Daniel J. Berger'
   spec.license    = 'Artistic 2.0'
   spec.email      = 'djberg96@gmail.com'
-  spec.homepage   = 'http://www.rubyforge.org/projects/win32utils'
+  spec.homepage   = 'https://github.com/djberg96/windows-api'
   spec.summary    = 'An easier way to create methods using Win32::API'
   spec.test_files = Dir['test/test*.rb']
   spec.files      = Dir['**/*'].reject{ |f| f.include?('git') }
 
-  spec.rubyforge_project = 'win32utils'
   spec.extra_rdoc_files  = ['README', 'CHANGES', 'MANIFEST']
 
   spec.add_dependency('win32-api', '>= 1.4.5')
