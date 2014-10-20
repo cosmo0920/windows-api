@@ -23,7 +23,7 @@ module Windows
     extend Forwardable
 
     # The version of the windows-api library
-    VERSION = '0.4.2'
+    VERSION = '0.4.3'
 
     # The methods from Win32::API are delegated to the appropriate object
     def_delegators(:@api, :function_name, :dll_name, :prototype)
