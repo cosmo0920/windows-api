@@ -28,4 +28,20 @@ Rake::TestTask.new do |test|
   test.verbose = true
 end
 
+namespace :test do
+  desc "Test the core windows-api library"
+  Rake::TestTask.new(:api) do |t|
+    t.warning = true
+    t.verbose = true
+    t.test_files = FileList['test/test_windows_api.rb']
+  end
+
+  desc "Test the wide string methods"
+  Rake::TestTask.new(:wide) do |t|
+    t.warning = true
+    t.verbose = true
+    t.test_files = FileList['test/test_wide_string.rb']
+  end
+end
+
 task :default => :test
