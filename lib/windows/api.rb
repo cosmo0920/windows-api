@@ -53,7 +53,6 @@ module Windows
       'HCONV'        => 'L',
       'HDC'          => 'L',
       'HFILE'        => 'I',
-      'HKEY'         => 'L',
       'HFONT'        => 'L',
       'HINSTANCE'    => 'L',
       'HKEY'         => 'L',
