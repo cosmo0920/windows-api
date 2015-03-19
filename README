@@ -79,15 +79,15 @@
    if you installed this as a gem.
 
 == Future Plans
-   This library will eventually be dropped in favor of FFI once I'm convinced
-   that FFI is stable for both mingw and mswin.
+   I have no future plans for this library other than bug fixes. You should
+   use FFI instead of win32-api for all projects where possible.
 
 == Bugs
    None that I'm aware of. Please submit any bugs to the project page at
    https://github.com/djberg96/windows-api.
 
 == Copyright
-   (C) 2007-2014, Daniel J. Berger
+   (C) 2007-2015, Daniel J. Berger
 
 == License
    Artistic 2.0
