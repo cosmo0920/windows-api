@@ -57,7 +57,7 @@ class TC_Windows_API < Test::Unit::TestCase
   end
 
   def test_version
-    assert_equal('0.4.3', API::VERSION)
+    assert_equal('0.4.4', API::VERSION)
   end
 
   def test_full_data_types
