@@ -1,3 +1,7 @@
+== 0.4.4 - 18-Mar-2015
+* Removed a duplicate hash entry. Thanks go to Baptiste Courtois for the spot.
+* Added some specialized test tasks.
+
 == 0.4.3 - 20-Oct-2014
 * Updates to the gemspec and Rakefile.
 
