@@ -42,7 +42,7 @@ module Windows
     $umask  = API.new('_umask', 'I', 'I', 'msvcrt')
     $wave   = API.new('waveOutGetNumDevs', 'V', 'I', 'winmm')
     $read   = API.new('ReadDirectoryChangesW', 'LPLILPPP', 'B')
-   end
+  end
 end
 
 class TC_Windows_API < Test::Unit::TestCase
