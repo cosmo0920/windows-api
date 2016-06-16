@@ -15,6 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency('win32-api', '>= 1.4.5')
   spec.add_development_dependency('test-unit')
+  spec.add_development_dependency('rake')
   spec.add_development_dependency('windows-pr','~>1.2.4')
 
   spec.description = <<-EOF
