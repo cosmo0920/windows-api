@@ -10,7 +10,8 @@ install:
   - bundle install
 build: off
 test_script:
-  - bundle exec rake test
+  - IF EXIST "C:\\Ruby%ruby_version%\\bin\\ridk.cmd" ridk.cmd exec bundle exec rake test
+  - IF NOT EXIST "C:\\Ruby%ruby_version%\\bin\\ridk.cmd" bundle exec rake test
 
 environment:
   matrix:
