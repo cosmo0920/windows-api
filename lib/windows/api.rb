@@ -8,7 +8,9 @@ module Windows
 
   # With Microsoft Visual C++ 8 and later users should use the associated
   # DLL instead of msvcrt directly, if possible.
-  if CONFIG['host_os'].split('_')[1]
+  if RUBY_PLATFORM.split('-')[-1] == "ucrt"
+    MSVCRT_DLL = 'ucrtbase'
+  elsif CONFIG['host_os'].split('_')[1]
     if CONFIG['host_os'].split('_')[1].to_i >= 80
       MSVCRT_DLL = 'msvcr' + CONFIG['host_os'].split('_')[1]
     else
