@@ -1,3 +1,6 @@
+== 0.4.5 - 09-Jun-2022
+* Support Ruby 3.1 UCRT binary
+
 == 0.4.4 - 18-Mar-2015
 * Removed a duplicate hash entry. Thanks go to Baptiste Courtois for the spot.
 * Added some specialized test tasks.
