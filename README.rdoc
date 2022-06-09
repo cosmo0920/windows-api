@@ -88,10 +88,11 @@
 
 == Copyright
    (C) 2007-2015, Daniel J. Berger
-   (C) 2016-2020, Hiroshi Hatake
+   (C) 2016-2022, Hiroshi Hatake
 
 == License
    Artistic 2.0
 
 == Author
    Daniel Berger
+   Hiroshi Hatake

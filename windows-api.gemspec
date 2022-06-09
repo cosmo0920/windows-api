@@ -3,9 +3,9 @@ require 'rubygems'
 Gem::Specification.new do |spec|
   spec.name       = 'windows-api'
   spec.version    = '0.4.5'
-  spec.author     = 'Daniel J. Berger'
+  spec.authors    = ['Daniel J. Berger', 'Hiroshi Hatake']
   spec.license    = 'Artistic 2.0'
-  spec.email      = 'djberg96@gmail.com'
+  spec.email      = ['djberg96@gmail.com', "cosmo0920.oucc@gmail.com"]
   spec.homepage   = 'https://github.com/djberg96/windows-api'
   spec.summary    = 'An easier way to create methods using Win32::API'
   spec.test_files = Dir['test/test*.rb']
