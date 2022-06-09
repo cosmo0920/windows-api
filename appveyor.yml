@@ -14,6 +14,7 @@ test_script:
 
 environment:
   matrix:
+    - ruby_version: "31-x64"
     - ruby_version: "30-x64"
     - ruby_version: "30"
     - ruby_version: "27-x64"
@@ -32,3 +33,15 @@ environment:
     - ruby_version: "21"
     - ruby_version: "200-x64"
     - ruby_version: "200"
+
+for:
+-
+  matrix:
+    only:
+      - ruby_version: "31-x64"
+  install:
+    - SET PATH=C:\Ruby%ruby_version%\bin;%PATH%
+    - ruby --version
+    - gem --version
+    - ridk install 1 3
+    - ridk exec bundle install

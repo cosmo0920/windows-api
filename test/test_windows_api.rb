@@ -53,7 +53,7 @@ class TC_Windows_API < Test::Unit::TestCase
 
   def setup
     @buf = 0.chr * 256
-    @runtimes = ['msvcrt', 'msvcr80', 'msvcr90', 'msvcr100']
+    @runtimes = ['msvcrt', 'msvcr80', 'msvcr90', 'msvcr100', 'ucrtbase']
   end
 
   def test_version
