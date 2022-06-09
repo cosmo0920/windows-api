@@ -1,6 +1,6 @@
 * CHANGES
 * MANIFEST
-* README
+* README.rdoc
 * Rakefile
 * windows-api.gemspec
 * lib/windows/api.rb
